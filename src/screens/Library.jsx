@@ -1,8 +1,7 @@
 import React from 'react'
-
 const Library = () => {
   return (
-    <div>
+    <div className = "screen-container">
       this is Librarry component
     </div>
   )

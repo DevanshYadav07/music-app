@@ -1,11 +1,11 @@
 
 import './App.css';
-
+import Home from './screens/Home';
+      
 function App() {
   return (
     <div className="App">
-      <h1>music app</h1>
-      <h3>Play songs that you like</h3>
+      <Home />
     </div>
   );
 }
