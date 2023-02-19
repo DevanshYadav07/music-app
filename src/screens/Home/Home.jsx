@@ -1,12 +1,12 @@
 import React from 'react'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
-import Library from './Library'
-import Feed from './Feed';
-import Favorities from './Favorities';
-import Trending from './Trending';
-import Player from './Player';
+import Library from '../Library/Library'
+import Feed from '../Feed/Feed';
+import Favorities from '../Favourites/Favorities';
+import Trending from '../Trending/Trending';
+import Player from '../Player/Player';
 import './Home.css'; 
-import Sidebar from './Sidebar';
+import Sidebar from '../../Component/Sidebar';
 
 const Home = () => {
   return (
