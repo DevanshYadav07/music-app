@@ -2,7 +2,7 @@ import React from 'react'
 
 const Trending = () => {
   return (
-    <div>
+    <div className='screen-container'>
       this is trending compnent
 
     </div>
