@@ -5,17 +5,21 @@ import Feed from './Feed';
 import Favorities from './Favorities';
 import Trending from './Trending';
 import Player from './Player';
+import Login from './auth/Login';
 const Home = () => {
   return (
     <>
     <Router>
-        <Routes>
+      <div>
+        <Login/>
+      </div>
+        {/* <Routes>
             <Route path="/" element={<Library/>}/>
             <Route path ="/feed" element={<Feed/>}/>
             <Route path="/trending" element ={<Trending/>}/>
             <Route path ="/Player" element={<Player/>}/>
             <Route path ="/favorities" element={<Favorities/>}/>
-        </Routes>
+        </Routes> */}
     </Router>
     </>
     // <div>
