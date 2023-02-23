@@ -1,12 +1,8 @@
+import React from 'react';
+import Home from './screens/home/home';
 
-import './App.css';
-
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <h1>music app</h1>
-    </div>
-  );
+    <div><Home/></div>
+  )
 }
-
-export default App;
