@@ -7,10 +7,12 @@
     justify-content: center;
     overflow: hidden;
     flex-direction: column;
+    
+
   }
   
   .logo {
-    width: 30%;
+    width: 1000px;
   }
   
   .login-btn {
