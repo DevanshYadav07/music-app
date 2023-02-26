@@ -21,12 +21,18 @@ const Home = () => {
     const token = window.localStorage.getItem("token");
     const hash = window.location.hash;
     window.location.hash="";
+    console.log('this is token');
+    console.log(hash);
+    // console.log('this is token split');
+    // console.log(hash.split('&')[0]);
     if (!token && hash) 
     {
         // 
        
 
+        
         const _token=hash.split("&")[0].split("=")[1];
+        
         window.localStorage.setItem("token",_token);
         setToken(_token);
         // setting token of client for api calls
@@ -37,12 +43,6 @@ const Home = () => {
         // set old token if we already have one
         setClientToken(token);
     }  
-    //   const _token = hash.split("&")[0].split("=")[1];
-    //   window.localStorage.setItem("token", _token);
-    //   setToken(_token);
-    
-
-    // console.log(hash);
     // we want to split the token on based on & and further to get the real token
   }, []);
   return !token ? (
