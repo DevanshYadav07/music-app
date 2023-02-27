@@ -21,8 +21,8 @@ const Home = () => {
     const token = window.localStorage.getItem("token");
     const hash = window.location.hash;
     window.location.hash="";
-    console.log('this is token');
-    console.log(hash);
+    // console.log('this is token');
+    // console.log(hash);
     // console.log('this is token split');
     // console.log(hash.split('&')[0]);
     if (!token && hash) 
