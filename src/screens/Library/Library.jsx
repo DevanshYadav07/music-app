@@ -13,7 +13,8 @@ const Library = () => {
   useEffect(() => {
     APIKit.get("me/playlists").then(function (response) {
       setPlaylists(response.data.items);
-      console.log(response.data);
+      console.log('inside use effect ',response.data);
+
     });
   }, []);
 
@@ -30,11 +31,11 @@ const Library = () => {
         {playlists?.map((playlist) => (
           // using ()as it;s a single return statement
           <div className="playlist-card" key={playlist.id}  onClick={()=>playPlaylist(playlist.id)}>
-            <img
+            {playlist.images.length>0?<img
               src={playlist.images[0].url}
               alt="playlist "
               className="playlist-image"
-            />
+            />:<div>no image </div>}
             <p className="playlist-title">{playlist.name}</p>
             <p className="playlist-subtitle">{playlist.tracks.total}Songs</p>
             {/* adding play button */}
