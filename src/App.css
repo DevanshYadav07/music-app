@@ -1,0 +1,11 @@
+.App {
+  align-items: center;
+  justify-content: center ;
+}
+h1{
+  display: flex;
+  background-color: aquamarine;
+  align-items: center;
+  justify-content: center;
+
+}
