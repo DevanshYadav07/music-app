@@ -31,10 +31,12 @@ const Library = () => {
           // using ()as it;s a single return statement
           <div className="playlist-card" key={playlist.id}  onClick={()=>playPlaylist(playlist.id)}>
             <img
-              src={playlist.images[0].url}
+
+              src={playlist.images[0]?.url}
               alt="playlist "
               className="playlist-image"
             />
+            console.log()
             <p className="playlist-title">{playlist.name}</p>
             <p className="playlist-subtitle">{playlist.tracks.total}Songs</p>
             {/* adding play button */}
