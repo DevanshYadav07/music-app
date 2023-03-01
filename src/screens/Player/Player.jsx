@@ -25,6 +25,7 @@ const Player = () => {
   // console.log("tracks")
   //  console.log(tracks);
   //  console.log(tracks.length);
+  console.log(tracks);
 
   useEffect(() => {
     // console.log('this is useeffect',tracks.length);
